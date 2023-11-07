@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: renderAppbar(),
-      drawer: renderDrawer(),
+      drawer: renderDrawer(context),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -32,8 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.only(left: 80.0),
-                          child: Text('Smart Factory', style: TextStyle(
+                          margin: EdgeInsets.only(left: 80.0, top: 100.0),
+                          child: Text('The MinFac', style: TextStyle(
                             fontSize: 120.0,
                             fontWeight: FontWeight.bold
                           ),),
